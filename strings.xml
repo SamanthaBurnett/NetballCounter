@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Netball Score Counter</string>
+    <string name="home">Home</string>
+    <string name="_0">0</string>
+    <string name="_2_points">+2 Points</string>
+    <string name="_1_points">+1 Points</string>
+    <string name="visitor">Visitor</string>
+    <string name="go_team">Go Team !!!</string>
+    <string name="reset">Reset</string>
+</resources>
