@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/net_background"
+    android:fillViewport="true"
+    android:paddingTop="@dimen/padding_dimen">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/score_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/home"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorMain"/>
+
+                <TextView
+                    android:id="@+id/home_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/score_size"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_dimen"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    android:onClick="twoPointsHome"
+                    android:text="@string/_2_points" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    android:onClick="onePointHome"
+                    android:text="@string/_1_points" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/visitor"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:textColor="@color/colorMain"/>
+
+                <TextView
+                    android:id="@+id/visitor_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="@color/colorMain"
+                    android:textSize="@dimen/score_size"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_dimen"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    android:onClick="twoPointsVisitor"
+                    android:text="@string/_2_points" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/left_right_margin"
+                    android:layout_marginRight="@dimen/left_right_margin"
+                    android:onClick="onePointVisitor"
+                    android:text="@string/_1_points" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_dimen"
+            android:onClick="reset"
+            android:text="@string/reset"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_dimen"
+            android:fontFamily="cursive"
+            android:text="@string/go_team"
+            android:textColor="@color/colorMain"
+            android:textSize="@dimen/go_team_size"/>
+
+    </LinearLayout>
+</ScrollView>
